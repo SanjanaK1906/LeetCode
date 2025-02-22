@@ -21,8 +21,8 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
   */
-//time complexity- O(n)
-//space complexity -O(n)
+//time complexity- O(1)
+//space complexity -O(1)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> m1= new HashMap<>();
