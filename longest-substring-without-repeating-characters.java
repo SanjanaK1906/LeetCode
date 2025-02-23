@@ -26,12 +26,12 @@ class Solution {
         int max=0;
         StringBuilder sb= new StringBuilder();
         for (int i=0; i<s.length();i++){
-            int temp= sb.indexOf(String.valueOf(s.charAt(i)));
-            if(temp !=-1){
+            int temp= sb.indexOf(String.valueOf(s.charAt(i))); //find index of char, first convert to string using -String.valueOf()
+            if(temp !=-1){ // if char exist then delete char and all its prev chars.
                 sb.delete(0,temp+1);
             }
-                sb.append(s.charAt(i));
-                if(max<sb.length()){
+                sb.append(s.charAt(i)); //add char to sb
+                if(max<sb.length()){  //check for max length
                     max= sb.length();
                 }
         }
